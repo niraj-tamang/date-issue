@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Option 1: As per Documented"),
+              Text("Option 1: As per Documentation"),
               Text("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" ,style: TextStyle(
                 fontWeight: FontWeight.bold
               ),),
