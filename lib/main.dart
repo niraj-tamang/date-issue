@@ -59,7 +59,10 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("Option 1: As Documented: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"),
+              Text("Option 1: As per Documented"),
+              Text("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" ,style: TextStyle(
+                fontWeight: FontWeight.bold
+              ),),
               ElevatedButton(onPressed: (){
 
 
@@ -86,7 +89,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(height: 32,),
 
 
-              Text("Option 2: You Suggested: yyyy-MM-ddTHH:mm:ss.SSSZ"),
+              Text("Option 2: Your Suggestion"),
+              Text("yyyy-MM-ddTHH:mm:ss.SSSZ", style: TextStyle(
+                  fontWeight: FontWeight.bold
+              ),),
               ElevatedButton(onPressed: (){
 
                 Random rand = Random();
@@ -127,12 +133,12 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                 Text( "Log Sent Requst"),
+                 Text( "Log Sent Request"),
                   ElevatedButton(onPressed: (){
                     setState(() {
                       log = "";
                     });
-                  }, child: Text("clear"))
+                  }, child: Text("Clear Log"))
                 ],
               ),
               Text("$log")
